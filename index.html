@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8" name="viewpoint" content="width=device-width,intial-scale=1.0">
+  <title>About me</title>
+  <style>
+  body{
+    background:#333;
+    font-family:monospace;
+    text-align:center;
+    color:white;
+  }
+  .title{
+    background:#345;
+    margin-left:340px;
+    white-space:nowrap;
+    border-radius:10px;
+    width:286px;
+    font-size:30px;
+    height:80px;
+    animation-name:scale;
+    animation-duration:3s;
+    animation-timing-function:ease-in-out;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+  }
+  @keyframes scale{
+    0%,100%{
+      transform: scale(1)
+    }
+    50%{
+      transform:scale(1.1);
+    }
+  }
+  .text{
+    font-size:30px;
+  }
+  .server{
+    background:#345;
+    white-space:nowrap;
+    margin-top:70px;
+    margin-left:380px;
+    width:200px;
+    border-radius:10px;
+    height:80px;
+    font-size:30px;
+    animation: scale2 3s ease-in-out infinite alternate;
+  }
+  @keyframes scale2{
+    0%,100%{
+      transform:scale(1)
+    }
+    50%{
+    transform:scale(1.1)
+    }
+  }
+  .server a{
+    width:200px;
+    display:inline-block;
+    height:80px;
+  }
+  .server p{
+    margin-top:-65px;
+  }
+  .lang{
+    font-size:30px;
+  }
+  .credit{
+    margin-top:600px;
+    font-size:20px;
+    opacity:70%;
+  }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="title">
+  <h1>About me</h1>
+    </div>
+    &nbsp;
+    &nbsp;
+    <hr>
+    <div class="animated-background"></div>
+    <div class="text">
+      <p>Hello im jutsucatbleh(or just cat)im a programmer who started a few months ago <br> i also have an discord server</p>
+    </div>
+    <div class="server">
+      <a href="https://discord.gg/63jH75GPxW"></a>
+      <p>My server</p>
+    </div>
+    <hr>
+    <div class="lang">
+      <p>The programming languages im learning</p>
+      <img src="lang.jpeg" alt="icon" width="200" height="200">
+    </div>
+    <div class="credit">
+      <p>Made by jutsucatbleh and domain from github pages</p>
+    </div>
+  </div>
+</body>
+</html>
