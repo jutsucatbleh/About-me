@@ -68,10 +68,30 @@
   }
   .credit{
     position:absolute;
-    text-align:center;
+    white-space:nowrap;
+    margin-left:-290px;
+    display:inline-block;
+    justify-content:center;
     bottom:5px;
     font-size:20px;
     opacity:70%;
+  }
+  .tip p{
+    background:#345;
+    width:200px;
+    font-size:20px;
+    height:40px;
+    margin-left:385px;
+    border-radius:10px;
+  }
+  .tip button{
+    background:;
+    margin:20px;
+    width:90px;
+    height:40px;
+    font-size:30px;
+    background:lightblue;
+    border:none;
   }
   </style>
 </head>
@@ -99,6 +119,25 @@
     <div class="credit">
       <p>Made by jutsucatbleh and domain from github pages</p>
     </div>
+    <div class="tip">
+      <p>leave a tip</p>
+      <button class="but">5%</button>
+      <button class="but">10%</button>
+      <button class="but">25%</button>
+      <button class="but">100%</button>
+      <p id="thx" style="background:none;"></p>
+    </div>
   </div>
+  <script>
+  const buttons = document.querySelectorAll('.but');
+    const thx = document.getElementById('thx');
+    const commonText = "thank you so much";
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            thx.textContent = commonText;
+        });
+    });
+  </script>
 </body>
 </html>
